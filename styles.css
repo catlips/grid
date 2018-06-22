@@ -1,0 +1,89 @@
+html {
+}
+body {
+  color: #eee;
+  background-color: #222;
+  font-family: "helvetica neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/*footer {
+  position: absolute;
+  bottom: 0;
+}
+*/
+.container {
+  /*display: grid;*/
+  /*grid-template-rows: auto auto;*/
+  grid-gap: 20px;
+  padding: 20px;
+  /*max-width: 410px;*/
+  margin: auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 540px) {
+  .container {
+    width: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 996px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto 300px;
+    max-width: 1000px;
+  }
+}
+#top,
+#bottom {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #ffcb04;
+}
+
+#west {
+  background-color: #ff6000;
+}
+#east {
+  background-color: #476dff;
+  /*width: 300px;*/
+}
+/*#bottom {
+  background-color: #ffcb04;
+}
+*/
+.ad,
+header {
+  background-color: white;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.ad span,
+header span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+header {
+  height: 100px;
+}
+header span {
+  font-weight: bold;
+  font-size: 36px;
+  color: green;
+}
+
+.medrect {
+  width: 300px;
+  height: 250px;
+}
+.leaderboard {
+  max-width: 728px;
+  height: 90px;
+}
