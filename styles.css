@@ -1,8 +1,10 @@
 html {
 }
 body {
-  color: #eee;
-  background-color: #222;
+  color: #111;
+  background-color: #eee;
+  font-size: 16px;
+  line-height: 1.4;
   font-family: "helvetica neue", sans-serif;
   padding: 0;
   margin: 0;
@@ -13,13 +15,11 @@ body {
 }
 */
 .container {
-  /*display: grid;*/
-  /*grid-template-rows: auto auto;*/
   grid-gap: 20px;
   padding: 20px;
-  /*max-width: 410px;*/
   margin: auto;
   overflow: hidden;
+  background-color: #fff;
 }
 @media screen and (min-width: 540px) {
   .container {
@@ -42,20 +42,14 @@ body {
 #bottom {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: #ffcb04;
 }
 
-#west {
-  background-color: #ff6000;
-}
+#top,
+#bottom,
+#west,
 #east {
-  background-color: #476dff;
-  /*width: 300px;*/
+  background-color: #f6f6f6;
 }
-/*#bottom {
-  background-color: #ffcb04;
-}
-*/
 .ad,
 header {
   background-color: white;
@@ -68,7 +62,7 @@ header span {
   display: block;
   width: 100%;
   text-align: center;
-  color: black;
+  color: #eee;
 }
 header {
   height: 100px;
@@ -78,7 +72,9 @@ header span {
   font-size: 36px;
   color: green;
 }
-
+.ad {
+  background-color: #476dff;
+}
 .medrect {
   width: 300px;
   height: 250px;
